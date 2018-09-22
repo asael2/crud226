@@ -31,5 +31,13 @@ test:
   database: apirest
 
 production:
-  <<: *default
-  database: apirest
+  #<<: *default
+  database: d6jtun6vpde26f
+  host: ec2-54-83-13-119.compute-1.amazonaws.com
+  user: hcuamhgmojzlgd
+  port: 5432
+  password: 38ca8de910765d8959f62758c5286685186650eaaab666804500ac6d8c8c1405
+  URI: postgres://hcuamhgmojzlgd:38ca8de910765d8959f62758c5286685186650eaaab666804500ac6d8c8c1405@ec2-54-83-13-119.compute-1.amazonaws.com:5432/d6jtun6vpde26f
+  Heroku CLI: heroku pg:psql postgresql-polished-55347 --app miapirails
+
+  
