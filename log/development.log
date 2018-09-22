@@ -2537,3 +2537,11 @@ Processing by Api::V1::ArticlesController#show as HTML
 Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/api/v1/articles/4" for 127.0.0.1 at 2018-09-21 23:54:18 -0500
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.49ms)
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 1.0ms)
+
+
