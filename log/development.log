@@ -3818,3 +3818,56 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 71ms (Views: 38.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:12:07 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (6.0ms)
+Completed 200 OK in 90ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:12:20 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (6.0ms)
+Completed 200 OK in 85ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/articles/4" for 127.0.0.1 at 2018-11-01 11:12:26 -0500
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.24ms)
+Completed 200 OK in 45ms (Views: 21.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 18:08:58 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (8.0ms)
+Completed 200 OK in 119ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/articles/4" for 127.0.0.1 at 2018-11-01 18:09:31 -0500
+Processing by Api::V1::ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (2.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.99ms)
+Completed 200 OK in 22ms (Views: 5.3ms | ActiveRecord: 2.0ms)
+
+
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (30.9ms)[0m  [1m[32mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "It's a Battlefield"], ["body", "Non pariatur facilis ullam tempora veniam vel quia autem."], ["created_at", "2018-11-01 23:11:27.215874"], ["updated_at", "2018-11-01 23:11:27.215874"]]
+  [1m[35m (10.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Look Homeward, Angel"], ["body", "Reiciendis temporibus quis earum assumenda qui vitae est laboriosam."], ["created_at", "2018-11-01 23:11:27.261803"], ["updated_at", "2018-11-01 23:11:27.261803"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Cover Her Face"], ["body", "Sunt reiciendis error quis voluptatem ratione optio."], ["created_at", "2018-11-01 23:11:27.266137"], ["updated_at", "2018-11-01 23:11:27.266137"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Carrion Comfort"], ["body", "Pariatur voluptates tempora et aspernatur omnis."], ["created_at", "2018-11-01 23:11:27.269730"], ["updated_at", "2018-11-01 23:11:27.269730"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Dulce et Decorum Est"], ["body", "Praesentium sit sint facilis expedita."], ["created_at", "2018-11-01 23:11:27.272721"], ["updated_at", "2018-11-01 23:11:27.272721"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
