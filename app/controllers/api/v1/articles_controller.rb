@@ -21,6 +21,9 @@ module Api
         end
       end
 
+      def delete
+      end
+
       def destroy
         article = Article.find(params[:id])
         article.destroy
@@ -44,3 +47,5 @@ module Api
     end
   end
 end
+
+

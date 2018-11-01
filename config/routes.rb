@@ -6,8 +6,7 @@ Rails.application.routes.draw do
     end
   end
 
-  post 'user_token' => 'user_token#create'
-  get 'users/current' => 'users#current'
-  resources :users
-
+  #post 'user_token' => 'user_token#create'
+  #get 'users/current' => 'users#current'
+  
 end
